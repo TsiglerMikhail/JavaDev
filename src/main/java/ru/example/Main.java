@@ -11,6 +11,7 @@ public class Main {
         printIntValue();
         System.out.println(chatToInt('Q'));
         System.out.println(intToChar(81000));
+
     }
     /*
     4. Написать публичный метод принимающий 2 параметра: первый типа byte и второй типа short.
