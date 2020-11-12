@@ -5,11 +5,7 @@ package ru.example;
  */
 public class Animal {
     private String name = "noname";
-    private boolean canSpeek;
-    private String sound;
-    private boolean canMove;
-    private boolean canClimbTrees;
-    private boolean canSwim;
+    private String sound = "...";
     private boolean hunger = true;
 
     public String getName() {
@@ -20,46 +16,12 @@ public class Animal {
         this.name = name;
     }
 
-    public boolean isCanSpeek() {
-        return canSpeek;
-    }
-
-    public void setCanSpeek(String sound) {
-        this.canSpeek = true;
+    public void setVoice(String sound) {
         this.sound = sound;
     }
 
     public void Speek(){
-        if(canSpeek){
-            System.out.println(sound);
-        }
-        else {
-            System.out.println("...");
-        }
-    }
-
-    public boolean isCanMove() {
-        return canMove;
-    }
-
-    public void setCanMove(boolean canMove) {
-        this.canMove = canMove;
-    }
-
-    public boolean isCanClimbTrees() {
-        return canClimbTrees;
-    }
-
-    public void setCanClimbTrees(boolean canClimbTrees) {
-        this.canClimbTrees = canClimbTrees;
-    }
-
-    public boolean isCanSwim() {
-        return canSwim;
-    }
-
-    public void setCanSwim(boolean canSwim) {
-        this.canSwim = canSwim;
+        System.out.println(sound);
     }
 
     public boolean Hungry() {

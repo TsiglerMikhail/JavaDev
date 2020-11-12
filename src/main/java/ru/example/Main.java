@@ -12,6 +12,7 @@ public class Main {
         dog.eat();
         System.out.println(dog.Hungry());
         System.out.println(man.getName());
+        cat.сlimbTrees();
     }
 
 }

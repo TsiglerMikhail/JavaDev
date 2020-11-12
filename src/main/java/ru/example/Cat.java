@@ -1,16 +1,21 @@
 package ru.example;
 
 public class Cat extends Animal {
+    public void move() {
+        System.out.println("Я умею ходить");
+    }
+
+    public void сlimbTrees() {
+        System.out.println("Я могу забарться на дерево");
+    }
+
+
     public Cat() {
-        setCanMove(true);
-        setCanClimbTrees(true);
-        setCanSpeek("meow");
+        setVoice("meow");
     }
 
     public Cat(String name) {
         setName(name);
-        setCanMove(true);
-        setCanClimbTrees(true);
-        setCanSpeek("meow");
+        setVoice("meow");
     }
 }

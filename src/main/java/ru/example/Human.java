@@ -1,17 +1,23 @@
 package ru.example;
 
 public class Human extends Animal{
+    public void move() {
+        System.out.println("Я умею ходить");
+    }
+
+    public void swim() {
+        System.out.println("Я умею плавать");
+    }
+
+    public void сlimbTrees() {
+        System.out.println("Я могу забарться на дерево");
+    }
+
     public Human() {
-        setCanSwim(true);
-        setCanMove(true);
-        setCanClimbTrees(true);
-        setCanSpeek("Hi");
+        setVoice("Hi");
     }
     public Human(String name) {
-        setName(name);
-        setCanSwim(true);
-        setCanMove(true);
-        setCanClimbTrees(true);
-        setCanSpeek("Hi");
+        setName("Bob");
+        setVoice("Hi");
     }
 }
